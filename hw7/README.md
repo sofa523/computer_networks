@@ -10,12 +10,13 @@ cd /etc/nginx/geoip
 sudo wget https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb
 ```
 
-## Создание конфигурации (находится в nginx.conf)
+## Создание конфигурации
 ```
 sudo nano /etc/nginx/sites-available/quotes-proxy
 ```
+Вставьте содержимое из файла: nginx.conf
 
-##
+## Редактируем конфигурацию
 ```
 sudo nano /etc/nginx/nginx.conf
 ```
@@ -41,6 +42,12 @@ http {
     # ... другие настройки ...
 }
 ```
+
+## Создаем "заглушку" 
+```
+sudo nano /usr/share/nginx/html/blocked.html
+```
+Вставьте содержимое из файла: blocked.html
 
 ## Проверяем синтаксис
 ```
